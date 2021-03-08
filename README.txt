@@ -20,11 +20,11 @@ The program has 3 files:
 2. Btree.h- class definition- contains the declaration of the class, and a node struct
 3. Btree.cpp- class implementation- contains the implement of the functions, where the functions realization.
 
-If you want to compile the program:
-ctrl+shift+B
+If you want to compile the program on terminal:
+g++ -g Btree.cpp Ex4.cpp -o Ex4
 
-If you want to run the program:
-push f5
+If you want to run the program on terminal:
+./ex5
 
 Input orders:
 1. the first input can be 2 options:
