@@ -9,9 +9,19 @@ int main()
     int type, treeNum, nodeValue, arraySize=1, idxTreeToCompare, lastSize;
     //creat the array that keeps the pointers to the trees
     btree** treesArray= (btree**)malloc(sizeof(btree*));
+    string msg=" -to set a tree enter 'a number of tree' '0'\n"
+               "-to set a new head in the tree enter 'a number of tree' '1' 'value'\n"
+               "-to print the smallest value in the tree enter 'num of tree' '2'\n"
+               "-to know if its binary search tree enter 'num of tree' '4'\n"
+               "-to know the depth of the tree enter 'num of tree' '5'\n"
+               "-to to do a mirror to a tree enter 'num of tree' '6' \n"
+               "-to know if the trees are same enter 'num of tree' '7' 'second tree'\n"
+               "-to print a tree enter 'num of tree' '9' \n"
+               "-enter -1 to exit";
     lastSize=arraySize;
     for(;;)
     {    
+        cout<<msg<<endl;
         cin>>treeNum;
         if(treeNum==-1){
             for(int i=0; i<arraySize; i++)
